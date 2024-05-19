@@ -66,6 +66,9 @@ flutter:
     - assets/images/carousel1.png
     - assets/images/user.png
     - assets/images/menu.png
+    - assets/images/game1.png
+    - assets/images/game2.png
+    - assets/images/game3.png
 
   # To add assets to your application, add an assets section, like this:
   # assets:

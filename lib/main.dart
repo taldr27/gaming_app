@@ -71,18 +71,22 @@ class HomeScreen extends StatelessWidget {
               }).toList(),
             ),
             const Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: EdgeInsets.fromLTRB(20, 33, 0, 0),
               child: Text('Recently top up',
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
             ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  GameIcon('assets/images/logo.png', 'Game 1'),
-                ],
-              ),
-            ),
+            Padding(
+                padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                child: SingleChildScrollView(
+                  scrollDirection: Axis.horizontal,
+                  child: Row(
+                    children: [
+                      GameIcon('assets/images/game1.png', 'Game 1'),
+                      GameIcon('assets/images/game2.png', 'Game 2'),
+                      GameIcon('assets/images/game3.png', 'Game 3'),
+                    ],
+                  ),
+                )),
             const Padding(
               padding: EdgeInsets.all(8.0),
               child: Text('Popular Game',
